@@ -1,0 +1,291 @@
+{% extends "base.html" %}
+
+{% block title %}Raj || Portfolio{% endblock title %}
+
+{% block style %}
+
+.home{
+    height: 100vh;
+    background: url('static/home.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    height: 600px;
+}
+
+.home-content h1{
+    position: relative;
+    color: aliceblue;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content h3{
+    position: relative;
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+}
+
+
+.home-content h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+
+.home-content p{
+    position: relative;
+    color: aliceblue;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+
+.home-content p::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+
+}
+
+
+.home-content .btn-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+
+.home-content .btn-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.9s;
+    z-index: 2 ;
+
+}
+
+
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box:hover{
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: #00abf0 ;
+}
+
+.btn-box a:nth-child(2)::before{
+    color: #00abf0;
+
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #081b29;
+}
+
+.btn-box a:nth-child(1){
+    background: transparent;
+    color: #00abf0 ;
+}
+
+.btn-box a:nth-child(1)::before{
+    color: #00abf0;
+
+}
+
+.btn-box a:nth-child(1):hover{
+    color: #081b29;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+}
+
+.btn-box a:hover ::before{
+    width: 100%;
+}
+
+.home-sci{
+    bottom: 40px;
+    width: 170px;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.home-sci::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 2.5s;
+    z-index: 2 ;
+
+}
+
+
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+    
+}
+
+.home-sci a:hover{
+    color: #081b29;
+}
+
+.home-sci a:hover ::before{
+    width: 100%;
+}
+
+.home-imagehover {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    width: 500px;
+    height: 100%;
+    background:transparent;
+    transition: 3s;
+}
+
+.home-imagehover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100% ;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 3s;
+    z-index: 100 ;
+
+}
+
+
+.home-imagehover:hover{
+    background-color: #081b29;
+    opacity: .8;
+}
+
+
+{% endblock style %}
+
+{% block body %}
+<section class="home">
+    <div class="home-content">
+      <h1>Hi, I'm Raghvendra Kushwah</h1>
+      <h3>Backend Developer</h3>
+      <p>👋 Hi! I'm Raghvendra Kushwah, a 2nd-year B.Tech student passionate about C, HTML, and Python.</p> 
+      <p>Eager to delve into Data Science or Machine Learning,</p>
+      <p>I thrive on continuous learning and teamwork. Let's connect and explore tech together! </p>
+      <div class="btn-box">
+        <a href="static/Name2.pdf">Resume</a>
+        <a href="mailto:raghvendrakushwah701@gmail.com?subject=Subject%20Here&body=Message%20Here">Let's Talk</a>
+      </div>
+    </div>
+    <div class="home-sci">
+        <a href="https://www.linkedin.com/in/raghvendra-kushwah-444a16264/"><i class='bx bxl-linkedin-square'></i></a>
+        <a href="https://github.com/Rajk0808"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <span class="imagehover">
+    
+    </span>
+</section>
+{% endblock body %}

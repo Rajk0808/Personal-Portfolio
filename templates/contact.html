@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+{% block style %}
+.home{
+    background: #081b29;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    color: aliceblue;
+}
+{% endblock style %}
+{% block body %}
+<section class="home">
+    <form class="row g-3" method ='post' action="/contact">
+      {% csrf_token %}
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label" style="color:#00abf0;">First name</label>
+          <input type="text" class="form-control" name="fristname" id="validationDefault01" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label" style="color:#00abf0;">Last name</label>
+          <input type="text" class="form-control" name="lastname" id="validationDefault02" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefaultUsername" class="form-label"style="color:#00abf0;">Email</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend2">@</span>
+            <input type="email" class="form-control" name="email" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
+          </div>
+        </div>
+        <div class="col-md-4">
+           <label for="validationDefault03" class="form-label" style="color:#00abf0;">Massage</label>
+           <textarea name="massage" id="validationDefault03" rows="5" cols="99" required></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+    </form>
+</section>
+{% endblock body %}

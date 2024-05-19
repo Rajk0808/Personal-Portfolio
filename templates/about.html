@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock title %}
+
+{% block style %}
+.about{
+    background: #081b29;
+    height: 100vh;
+    display: flex;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.heading{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 4.5rem;
+    color: aliceblue;
+}
+.heading-3{
+    color: #00abf0;
+    margin-left: 40px;
+}
+
+.para{
+    color:aliceblue;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.para h6{
+    margin-left: 100px;
+}
+
+.para p{
+    margin-left: 100px;
+}
+{% endblock style %}
+{% block body %}
+<section class="about" id="About">
+    <div class="about-cotent">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="para">
+            <h4 class="heading-4">
+                👋 Hi there! I'm Raghvendra Kushwah,
+            </h4>
+            <h3 class="heading-3">Backend Developer</h3>
+            <h6 class="heading-6">a passionate and driven Computer Science student currently in my second year of B.Tech. My journey in the world of technology has been shaped by my proficiency in C, HTML and Python. <br>
+            </h6>
+            🚀 Skills: <br>
+               <p>
+               C || HTML || Python <br>
+               Time Management <br>
+               Adaptability <br>
+               Enthusiastic Learner <br>
+               Teamwork and Collaboration <br>
+               </p> 
+            💡 Academic Journey: <br>
+                <p>
+                I'm currently immersed in my B.Tech studies,<br>
+                where I'm delving into Python Programming language . The dynamic nature of technology excites me, and I'm always eager to explore new concepts and apply them to real-world scenarios. <br>
+                </p>
+            🌐 Aspirations: <br>
+                <p>
+                Looking ahead, <br> 
+                I'm enthusiastic about Data Science or Machine Learning . My goal is to become a Data Science Engineer in the future. I believe in continuous learning and adaptability, and I'm eager to contribute to the ever-evolving landscape of technology.
+                <br>
+                </p>
+            🔗 Connect with Me: <br>
+                <p>
+                I'm always open to connecting with fellow students, professionals, and enthusiasts. Whether it's discussing the latest tech trends, sharing project ideas, or exploring potential collaborations, I'm just a message away.
+                <br>
+                Let's connect and explore the vast possibilities within the realm of technology!
+
+                
+                </p>
+        </div>
+    </div>
+</section>
+{% endblock body %}
