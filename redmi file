@@ -1,0 +1,68 @@
+Reghwendra Kushwa - Portfolio Website
+Welcome to the official portfolio website of Reghwendra Kushwa. This website showcases my personal projects, skills, and professional background in web development and other related fields.
+
+Table of Contents
+Overview
+Features
+Tech Stack
+Installation
+Usage
+Contributing
+License
+Contact
+Overview
+This portfolio website highlights my journey as a developer. It features detailed descriptions of projects I’ve worked on, a section about my skills, and ways to contact me for collaborations or inquiries.
+
+Features
+Homepage: Introduction and overview of my background.
+Projects: Displays my best projects with descriptions, images, and links.
+Skills: Lists all the technologies I am proficient in.
+Contact Me: Allows visitors to reach out via a contact form or through social media.
+Responsive Design: Works across all device types, from desktops to mobile devices.
+Tech Stack
+The website is built using:
+
+Frontend: HTML, CSS, JavaScript
+Backend: [Backend technology, if applicable]
+Framework: [Django, Flask, React, etc., if applicable]
+Database: [Database name, if applicable]
+Deployment: [Hosting platform used (Heroku, Netlify, GitHub Pages, etc.)]
+Installation
+To run this website locally, follow these steps:
+
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/reghwendrakushwa/portfolio.git
+Navigate to the project directory:
+bash
+Copy code
+cd portfolio
+If using a backend or specific framework (Django, Flask, etc.), install the required dependencies:
+bash
+Copy code
+pip install -r requirements.txt
+Run the application locally:
+bash
+Copy code
+python manage.py runserver
+Usage
+Once the website is up and running, you can view it locally by visiting:
+
+arduino
+Copy code
+http://127.0.0.1:8000/
+Navigate through the different sections to explore my projects, skills, and contact information.
+
+Contributing
+If you'd like to contribute to improving this portfolio, feel free to submit a pull request or open an issue on GitHub.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+For any inquiries or collaboration requests, feel free to reach out:
+
+Email: reghwendrakushwa@example.com
+LinkedIn: linkedin.com/in/reghwendrakushwa
+GitHub: github.com/reghwendrakushwa
